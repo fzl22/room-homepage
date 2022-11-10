@@ -1,0 +1,223 @@
+body{
+font-family: 'League Spartan', sans-serif;
+background-color:lightgray;
+}
+
+.container{
+  margin:3% 5% 0 5%;
+  display:grid;
+  grid-template-columns:33% 23% 14% 30%;
+  grid-template-rows:25em 13em;
+  grid-template-areas:'header header desc desc'
+'image2 about about image3';
+}
+
+.image1{
+  position: absolute;
+  z-index: -1;
+  left:5.6%;
+  width:56%;
+  height:25em;
+}
+
+.nav{
+  color:hsl(0, 0%, 63%);
+  width:10.5rem;
+  margin-top:8%;
+  letter-spacing:-5px;
+}
+.nav-button{
+  width:50%;
+  display:inline;
+  padding-top:9%;
+  padding-bottom:9%;
+  background-color:black;
+}
+
+.desktop-header{
+  grid-area:header;
+  padding-top:3%;
+  height:24em;
+}
+#menuIcon{
+  display:none;
+}
+.logo{
+    display:inline;
+    padding-right:5%;
+}
+
+.menu-item{
+  display:inline;
+  color: hsl(0, 0%, 100%);
+  font-weight:500;
+  font-size:1.3vw;
+  padding-right:1%;
+
+}
+.menu-list-mobile{
+    margin-top:-20%;
+}
+.menu-item-mobile{
+  display:none;
+  color: black;
+  font-weight:500;
+  font-size:4vw;
+  padding-right:5%;
+}
+
+.close-icon{
+  height:4%;
+  width:4%;
+}
+h1{
+    font-weight:700;
+    padding-top:7%;
+    font-size:2rem;
+    padding-left:5rem;
+    padding-right:7rem;
+  }
+.page-desc{
+  grid-area:desc;
+  background-color:white;
+}
+
+.desc{
+color: hsl(0, 0%, 63%);
+font-size:1rem;
+line-height:1.3rem;
+padding-left:5rem;
+padding-right:7rem;
+}
+.shop-now{
+  letter-spacing: 7px;
+  padding-left:17%;
+}
+
+.image2{
+ grid-area:image2;
+}
+.about{
+grid-area:about;
+padding-left:7%;
+padding-right:7%;
+padding-top:5%;
+background-color:white;
+}
+
+.about h5{
+  letter-spacing: 7px;
+}
+
+.about p{
+  color:hsl(0, 0%, 63%);
+  font-size:0.8rem;
+  line-height:1rem;
+  height:auto;
+}
+.image3{
+grid-area:image3;
+}
+
+.image4{
+  width:100%;
+  height:100%;
+}
+.image5{
+  width:100%;
+ height:100%;
+}
+
+/*@media screen and (max-width: 1440px) {
+  :root{
+    font-size:13.2px;
+  }
+  .nav{
+   top:32%;
+   width:13.8rem;
+  }
+  .nav-button{
+    width:50%;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+  }
+}*/
+@media screen and (max-width: 768px) {
+  :root{
+    font-size:11px;
+  }
+
+  .desc{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+  h1{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+  .nav{
+   padding-top:7%;
+  }
+  .nav-button{
+    width:50%;
+    padding-top:4%;
+    padding-bottom:4%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root{
+    font-size:12px;
+  }
+  .nav{
+   margin-top:8%;
+   width:10.5rem;
+  }
+  .nav-button{
+    width:50%;
+    padding-top:4%;
+    padding-bottom:4%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  :root{
+    font-size:10px;
+  }
+  .container{
+   display:block;
+   margin-top:20%;
+  }
+  .mobile-header{
+    padding-top:3%;
+    height:24em;
+    padding-left:7%;
+  }
+ .logo{
+   display:inline;
+   margin-left: 20%;
+ }
+.desc{
+  padding-left:3rem;
+  padding-right:2rem;
+}
+.image1{
+  position:absolute;
+  left:7%;
+  width:86%;
+ }
+ .nav{
+   position:absolute;
+   top:45%;
+   left:66%;
+   width:10rem;
+  }
+  .nav-button{
+    width:50%;
+    padding-top:2%;
+    padding-bottom:2%;
+  }
+  .image2{
+    margin-top:0;
+  }
+}
