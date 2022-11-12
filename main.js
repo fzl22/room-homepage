@@ -8,7 +8,6 @@
    document.getElementById("close").addEventListener("click",handleCloseButton);
 
    function setUpMenuList(){
-     console.log(window.screen.width);
      let mobileHeader = document.querySelector(".mobile-header");
 
      let desktopHeader = document.querySelector(".desktop-header");
@@ -47,7 +46,6 @@
    }
 
    function updateDescAndMainImage(){
-     console.log("current " + current);
      if(current==3 || current==-1)
      current = 0;
 
